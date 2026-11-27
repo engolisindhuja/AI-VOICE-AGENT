@@ -1,0 +1,13 @@
+ Overview of Pipeline
+
+A voice-based appointment booking assistant pipeline was created using Python along with the help of Pipecat pipeline framework. Voice is first transformed into text with the help of ElevenLabs Speech-to-Text (STT). This text is then processed by Google Gemini 3.5 Flash Lite model, which understands the intention of the caller and with the help of its built-in functionality, verifies the availability of the doctor, books an appointment, or cancels an already scheduled appointment. All the appointment details are stored and managed in a MySQL database. The text is again transformed to voice through TTS provided by ElevenLabs and sent to the caller.
+
+
+Technologies used:
+- Voice pipeline: Pipecat
+- STT: ElevenLabs
+- LLM: Google Gemini 3.5 Flash Lite
+- TTS: ElevenLabs
+- Backend: Python
+- Frontend: React
+- Database: MySQL
